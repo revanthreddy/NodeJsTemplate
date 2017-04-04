@@ -22,3 +22,7 @@ app.get('/', function (req, res) {
     res.sendfile(__dirname + '/public/index.html');
     //return res.send("DATA IS THE NEW BACON");
 });
+
+app.get('/ip', function (req, res) {
+    return res.send(req.ip);
+});
